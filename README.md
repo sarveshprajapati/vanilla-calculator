@@ -4,7 +4,7 @@ simple calculator app with js and css
 
 ## HTML
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +56,7 @@ simple calculator app with js and css
 </html>
 ```
 ## CSS
-```
+```css
 *{
     margin: 0;
     padding: 0;
@@ -122,7 +122,7 @@ form{
 ```
 
 ##  JavaScript
-```
+```js
 function insert(num){
     document.form.textview.value=document.form.textview.value+num;
 }
