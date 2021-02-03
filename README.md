@@ -1,3 +1,55 @@
 # Calculator App
 
 simple calculator app with js and css
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input type="text" name="textview" class="textview">
+            <table>
+                <tr>
+                    <td><input class="button button-clr"type="button" onclick="clean()" value="C"></td>
+                    <td><input class="button button-bksp"type="button"onclick="backspace()" value="<"></td>
+                    <td><input class="button button-op"type="button"onclick="insert('/')" value="/"></td>
+                    <td><input class="button button-op"type="button"onclick="insert('*')" value="*"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button-in"type="button"onclick="insert(7)" value="7"></td>
+                    <td><input class="button button-in"type="button"onclick="insert(8)" value="8"></td>
+                    <td><input class="button button-in"type="button"onclick="insert(9)" value="9"></td>
+                    <td><input class="button button-op"type="button"onclick="insert('+')" value="+"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button-in"type="button"onclick="insert(4)" value="4"></td>
+                    <td><input class="button button-in"type="button"onclick="insert(5)" value="5"></td>
+                    <td><input class="button button-in"type="button"onclick="insert(6)" value="6"></td>
+                    <td><input class="button button-op"type="button"onclick="insert('-')" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input class="button button-in"type="button"onclick="insert(1)" value="1"></td>
+                    <td><input class="button button-in"type="button"onclick="insert(2)" value="2"></td>
+                    <td><input class="button button-in"type="button"onclick="insert(3)" value="3"></td>
+                    <td rowspan="2"><input style="height: 108px"onclick="equal()" class="button button-eq"type="button" value="="></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input style="width: 108px"onclick="insert(0)" class="button button-in"type="button" value="0"></td>
+                    <td><input  class="button button-dot"type="button"onclick="insert('.')" value="."></td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+```
