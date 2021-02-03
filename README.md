@@ -2,6 +2,8 @@
 
 simple calculator app with js and css
 
+## HTML
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -52,4 +54,87 @@ simple calculator app with js and css
     <script src="script.js"></script>
 </body>
 </html>
+```
+## CSS
+```
+*{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+}
+.textview{
+    width: 208px;
+    height: 30px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 4.7px;
+    background-color: rgb(245, 244, 244);
+}
+.textview:hover{
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(4, 61, 83);
+    padding: 10px;
+    border-radius: 10px;
+}
+.button{
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(59, 59, 59);
+    
+}
+.button-clr{
+    background-color: rgb(250, 67, 67);
+}
+.button-bksp{
+    background-color: rgb(250, 140, 67);
+}
+.button-op{
+    background-color: rgb(67, 168, 250);
+}
+.button-eq{
+    background-color: rgb(168, 67, 250);
+}
+.button-in{
+    background-color: rgb(102, 151, 145);
+}
+.button-dot{
+    background-color: rgb(206, 177, 49);
+}
+```
+
+##  JavaScript
+```
+function insert(num){
+    document.form.textview.value=document.form.textview.value+num;
+}
+function clean(){
+    document.form.textview.value="";
+}
+function equal(){
+    document.form.textview.value=eval(document.form.textview.value);
+}
+function backspace(){
+    var exp=document.form.textview.value;
+    document.form.textview.value=exp.substring(0,exp.length-1);
+}
+
 ```
